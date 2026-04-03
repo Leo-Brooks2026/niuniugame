@@ -6,8 +6,10 @@
     <title>Unity WebGL Player | niuniu</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=324 height=576 tabindex="-1" style="width: 324px; height: 576px; background: url('Build/Export.jpg') center / cover"></canvas>
-    <script src="Build/Export.loader.js"></script>
+    <canvas id="unity-canvas" width=324 height=576 tabindex="-1" style="width: 324px; height: 576px; background: url('Build/game0320.jpg') center / cover"></canvas>
+    <script src="AgoraRTC_N-4.24.3.js"></script>
+    <script src="agora-rtm-2.2.3.min.js"></script>
+    <script src="Build/game0320.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +27,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Export.data.unityweb",
-        frameworkUrl: "Build/Export.framework.js.unityweb",
-        codeUrl: "Build/Export.wasm.unityweb",
+        dataUrl: "Build/game0320.data.unityweb",
+        frameworkUrl: "Build/game0320.framework.js.unityweb",
+        codeUrl: "Build/game0320.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "niuniu",
