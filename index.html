@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | niuniu</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1" style="width: 1080px; height: 1920px; background: url('Build/Export.jpg') center / cover"></canvas>
-    <script src="Build/Export.loader.js"></script>
+    <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1" style="width: 1080px; height: 1920px; background: url('Build/BuildAndRun.jpg') center / cover"></canvas>
+    <script src="Build/BuildAndRun.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Export.data.unityweb",
-        frameworkUrl: "Build/Export.framework.js.unityweb",
-        codeUrl: "Build/Export.wasm.unityweb",
+        dataUrl: "Build/BuildAndRun.data.unityweb",
+        frameworkUrl: "Build/BuildAndRun.framework.js.unityweb",
+        codeUrl: "Build/BuildAndRun.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "niuniu",
@@ -36,8 +36,5 @@
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
-  
-    <script src="AgoraRTC_N-4.24.3.js"></script>
-    <script src="agora-rtm-2.2.3.min.js"></script>
-</body>
+  </body>
 </html>
